@@ -71,6 +71,55 @@ nav li a{
     width: 100%;
     margin-top: 25px;
 }
+
+/* main styles */
+main{
+    min-width: 1440px;
+    margin: 0 auto;
+}
+/* team styles  */
+.team-container{
+    display: flex;
+    align-items: center;
+}
+.team-img-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+.team-contant{
+    padding-left:70px ;
+    padding-right: 70px;
+}
+.team-title{
+    font-size: 45px;
+}
+.quick-list{
+    color:  #727272;   
+    font-weight: 500;
+}
+.of-our{
+    color:  #131313; 
+    font-weight: 700;
+}
+.text-features{
+    color: #FF900E;
+    font-weight: 700;
+}
+.team-description{
+    color:  #727272;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+
+
+
+
+
+
+
 /* responsive media styles */
 /* mobile devices */
 
@@ -78,8 +127,11 @@ nav li a{
     header{
         padding: 20px;
     }
-    nav{
+    nav, .team-container {
         flex-direction: column;
+    }
+    .team-img-container{
+        grid-template-columns: 1fr;
     }
 }
 /* tablet devics */
@@ -87,7 +139,7 @@ nav li a{
     header{
         padding: 50px;
     }
-    nav{
+    nav, .team-container {
         flex-direction: column;
     }
 }
